@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div id="app">{{ message }}</div>
+
+
+  <div class="container">
+    <h1>Lista de Tarefas</h1>
+    <p>Adicione suas tarefas!</p>
+    <input type="text" id="tarefaInput" placeholder="Digite uma tarefa"><br>
+    <button class="button" onclick="adicionarTarefa()">Adicionar Tarefa</button>
+    <button class="botao_lista" onclick="limparLista()" id="btnReset">Limpar Tudo</button>
+    <p id="apagarLista"></p>
+    <p id="mensagem"></p>
+
+    <ul id="listaTarefas"> </ul>
+  </div>
+
+  <div class="modal" id="modalEditar" style="display: none;"> 
+    <label for="nomeModal"><strong>Novo nome:</strong></label><br>
+    <input type="text" id="nomeModal"><br>
+    <button type="submit" class="button" id="btnSalvar">Salvar</button><br>
+  </div>
+
+  <script src="script.js"></script> 
+
+</body>
+</html>
